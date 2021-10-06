@@ -1,4 +1,4 @@
-/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2
+/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/javi5454/Desktop/ED_Image
 -- The C compiler identification is GNU 9.3.0
 -- The CXX compiler identification is GNU 9.3.0
 -- Detecting C compiler ABI info
@@ -15,4 +15,4 @@
 Doxygen build started
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug
+-- Build files have been written to: /home/javi5454/Desktop/ED_Image/cmake-build-debug

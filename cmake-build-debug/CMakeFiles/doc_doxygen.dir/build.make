@@ -53,10 +53,10 @@ RM = /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2
+CMAKE_SOURCE_DIR = /home/javi5454/Desktop/ED_Image
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug
+CMAKE_BINARY_DIR = /home/javi5454/Desktop/ED_Image/cmake-build-debug
 
 # Utility rule file for doc_doxygen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/doc_doxygen.dir/compiler_depend.make
 include CMakeFiles/doc_doxygen.dir/progress.make
 
 CMakeFiles/doc_doxygen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	cd /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/estudiante && /usr/bin/doxygen /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/javi5454/Desktop/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	cd /home/javi5454/Desktop/ED_Image/estudiante && /usr/bin/doxygen /home/javi5454/Desktop/ED_Image/cmake-build-debug/Doxyfile
 
 doc_doxygen: CMakeFiles/doc_doxygen
 doc_doxygen: CMakeFiles/doc_doxygen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2 /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2 /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug /home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/javi5454/Desktop/ED_Image/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/javi5454/Desktop/ED_Image /home/javi5454/Desktop/ED_Image /home/javi5454/Desktop/ED_Image/cmake-build-debug /home/javi5454/Desktop/ED_Image/cmake-build-debug /home/javi5454/Desktop/ED_Image/cmake-build-debug/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

@@ -139,6 +139,12 @@ byte Image::get_pixel (int i, int j) const {
 }
 
 // This doesn't work if representation changes
+
+void Image::Invert() {
+    for (int i = 0; i < size(); i++){
+        set_pixel(i, 255- get_pixel(i));
+    }
+}
 void Image::set_pixel (int k, byte value) {
     // TODO this makes assumptions about the internal representation
     // TODO Can you reuse set_pixel(i,j,value)?

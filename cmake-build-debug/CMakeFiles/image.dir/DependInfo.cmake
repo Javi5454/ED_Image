@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/estudiante/src/image.cpp" "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/image.cpp.o"
-  "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/estudiante/src/imageIO.cpp" "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
-  "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/estudiante/src/imageop.cpp" "/home/javi5454/Desktop/Linux_PC/II_Curso/ED/Practicas/Practica_2/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
+  "/home/javi5454/Desktop/ED_Image/estudiante/src/image.cpp" "/home/javi5454/Desktop/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/image.cpp.o"
+  "/home/javi5454/Desktop/ED_Image/estudiante/src/imageIO.cpp" "/home/javi5454/Desktop/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
+  "/home/javi5454/Desktop/ED_Image/estudiante/src/imageop.cpp" "/home/javi5454/Desktop/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
