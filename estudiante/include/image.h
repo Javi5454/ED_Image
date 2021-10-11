@@ -243,7 +243,11 @@ public :
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+     * @brief Genera el negativo de la imagen sin copia
+     * @post Invierte el valor de cada píxel de la imagen
+     * (valor máximo del píxel - valor actual del píxel)
+     */
     void Invert();
 
     // Modifica el contraste de una Imagen .
@@ -255,7 +259,19 @@ public :
     // Genera un icono como reducción de una imagen.
     Image Subsample(int factor) const;
 
-    // Genera una subimagen.
+    /**
+     * @brief Genera una subimagen
+     * @pre 0 <= nrow < rows
+     * @pre 0 <= ncol < cols
+     * @pre 0 <= height < rows-nrow
+     * @pre 0 <= width < cols - ncol
+     * @param nrow Fila inicial
+     * @param ncol Columna inicial para recortar
+     * @param height Número de filas
+     * @param width Número de columnas
+     * @return Imagen con el recorte
+     * @post El objeto que llama a la función no se modifica
+     */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     // Genera una imagen aumentada 2x.

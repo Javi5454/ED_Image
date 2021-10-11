@@ -51,6 +51,28 @@ int main (int argc, char *argv[]){
     cout << "Dimensiones de " << origen << ":" << endl;
     cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
+    //Comprobamos las precondiciones
+    if (!(0 <= nrow) || !(nrow< image.get_rows())){
+        cout << "Error: Coordenada inicial x incorrecta." << endl;
+        cout << "Terminando la ejecucion del programa." << endl;
+        return 2;
+    }
+    else if(!(0 <= ncol) || !(ncol < image.get_cols())){
+        cout << "Error: Coordenada inicial y incorrecta." << endl;
+        cout << "Terminando la ejecucion del programa." << endl;
+        return 3;
+    }
+    else if (!(0 <= height) || !(height < image.get_rows() - nrow)){
+        cout << "Error: Altura subimagen incorrecta." << endl;
+        cout << "Terminando la ejecucion del programa." << endl;
+        return 4;
+    }
+    else if( !(0 <= width) || !(width < image.get_cols() - ncol )){
+        cout << "Error: Anchura subimagen incorrecta." << endl;
+        cout << "Terminando la ejecucion del programa." << endl;
+        return 5;
+    }
+
     // Calcular el negativo
     result = image.Crop(nrow, ncol, height, width);
 
