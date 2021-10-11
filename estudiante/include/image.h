@@ -138,7 +138,7 @@ public :
     /**
       * @brief Constructor de copias.
       * @param orig Referencia a la imagen original que se quiere copiar.
-      * @return Imagen, el objeto imagen creadreado.
+      * @return Imagen, el objeto imagen creado.
       */
     Image (const Image & orig);
 
