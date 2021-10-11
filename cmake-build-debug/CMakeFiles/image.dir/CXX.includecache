@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../estudiante/include/image.h
+cstdlib
+-
+imageIO.h
+../estudiante/include/imageIO.h
+
+../estudiante/include/imageIO.h
+
+/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp
+cstring
+-
+cassert
+-
+iostream
+-
+image.h
+-
+imageIO.h
+-
+

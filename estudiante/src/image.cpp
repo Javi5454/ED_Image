@@ -159,3 +159,8 @@ bool Image::Save (const char * file_path) const {
     return WritePGMImage(file_path, p, rows, cols);
 }
 
+void Image::Invert(){
+    for (int i=0; i<size(); i++){
+        set_pixel(i, 255-get_pixel(i));
+    }
+}

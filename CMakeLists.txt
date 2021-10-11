@@ -1,8 +1,8 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.16)
 project(practica2)
 
 set(CMAKE_CXX_STANDARD 14)
-set(BASE_FOLDER profesor)
+set(BASE_FOLDER estudiante)
 
 include_directories(${BASE_FOLDER}/include)
 #add_library(imageio ${BASE_FOLDER}/src/imageio.cpp)
