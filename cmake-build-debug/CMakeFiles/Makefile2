@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/image.dir/all
+all: CMakeFiles/subimagen.dir/all
 all: CMakeFiles/negativo.dir/all
 all: CMakeFiles/doc_doxygen.dir/all
 .PHONY : all
@@ -74,6 +75,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/image.dir/clean
+clean: CMakeFiles/subimagen.dir/clean
 clean: CMakeFiles/negativo.dir/clean
 clean: CMakeFiles/doc_doxygen.dir/clean
 .PHONY : clean
@@ -103,6 +105,32 @@ image: CMakeFiles/image.dir/rule
 CMakeFiles/image.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/clean
 .PHONY : CMakeFiles/image.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/subimagen.dir
+
+# All Build rule for target.
+CMakeFiles/subimagen.dir/all: CMakeFiles/image.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target subimagen"
+.PHONY : CMakeFiles/subimagen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/subimagen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subimagen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/subimagen.dir/rule
+
+# Convenience name for target.
+subimagen: CMakeFiles/subimagen.dir/rule
+.PHONY : subimagen
+
+# clean rule for target.
+CMakeFiles/subimagen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/clean
+.PHONY : CMakeFiles/subimagen.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/negativo.dir

@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/image.dir/DependInfo.cmake"
+  "CMakeFiles/subimagen.dir/DependInfo.cmake"
   "CMakeFiles/negativo.dir/DependInfo.cmake"
   "CMakeFiles/doc_doxygen.dir/DependInfo.cmake"
   )

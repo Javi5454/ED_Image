@@ -164,3 +164,22 @@ void Image::Invert(){
         set_pixel(i, 255-get_pixel(i));
     }
 }
+
+Image Image::Crop(int nrow, int ncol, int height, int width) const{
+    Image result(height,width);
+
+    int copyX = nrow;
+    int copyY= ncol;
+
+    for(int i=0; i<height; i++){
+        for(int j=0; j<width; j++) {
+            result.set_pixel(i, j, get_pixel(copyX, copyY));
+
+            copyY++;
+        }
+        copyY = ncol;
+        copyX++;
+    }
+
+    return result;
+}

@@ -1,5 +1,6 @@
+/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir
+/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/subimagen.dir
 /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/negativo.dir
 /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/doc_doxygen.dir
-/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/edit_cache.dir

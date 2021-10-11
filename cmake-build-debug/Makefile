@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -128,6 +128,19 @@ image: cmake_check_build_system
 image/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
 .PHONY : image/fast
+
+#=============================================================================
+# Target rules for targets named subimagen
+
+# Build rule for target.
+subimagen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 subimagen
+.PHONY : subimagen
+
+# fast build rule for target.
+subimagen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
+.PHONY : subimagen/fast
 
 #=============================================================================
 # Target rules for targets named negativo
@@ -251,6 +264,30 @@ estudiante/src/negativo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.s
 .PHONY : estudiante/src/negativo.cpp.s
 
+estudiante/src/subimagen.o: estudiante/src/subimagen.cpp.o
+.PHONY : estudiante/src/subimagen.o
+
+# target to build an object file
+estudiante/src/subimagen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o
+.PHONY : estudiante/src/subimagen.cpp.o
+
+estudiante/src/subimagen.i: estudiante/src/subimagen.cpp.i
+.PHONY : estudiante/src/subimagen.i
+
+# target to preprocess a source file
+estudiante/src/subimagen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.i
+.PHONY : estudiante/src/subimagen.cpp.i
+
+estudiante/src/subimagen.s: estudiante/src/subimagen.cpp.s
+.PHONY : estudiante/src/subimagen.s
+
+# target to generate assembly for a file
+estudiante/src/subimagen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.s
+.PHONY : estudiante/src/subimagen.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -262,6 +299,7 @@ help:
 	@echo "... doc_doxygen"
 	@echo "... image"
 	@echo "... negativo"
+	@echo "... subimagen"
 	@echo "... estudiante/src/image.o"
 	@echo "... estudiante/src/image.i"
 	@echo "... estudiante/src/image.s"
@@ -274,6 +312,9 @@ help:
 	@echo "... estudiante/src/negativo.o"
 	@echo "... estudiante/src/negativo.i"
 	@echo "... estudiante/src/negativo.s"
+	@echo "... estudiante/src/subimagen.o"
+	@echo "... estudiante/src/subimagen.i"
+	@echo "... estudiante/src/subimagen.s"
 .PHONY : help
 
 
