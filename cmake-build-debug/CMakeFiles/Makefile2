@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/practica2-imagenes
+CMAKE_SOURCE_DIR = /home/javi5454/Desktop/Github/ED_Image
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug
+CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -89,14 +89,14 @@ clean: CMakeFiles/zoom.dir/clean
 CMakeFiles/doc_doxygen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=1 "Built target doc_doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=1 "Built target doc_doxygen"
 .PHONY : CMakeFiles/doc_doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doc_doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc_doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/doc_doxygen.dir/rule
 
 # Convenience name for target.
@@ -115,14 +115,14 @@ CMakeFiles/doc_doxygen.dir/clean:
 CMakeFiles/image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=2,3,4,5,6,7 "Built target image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=2,3,4,5,6,7 "Built target image"
 .PHONY : CMakeFiles/image.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/image.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/image.dir/rule
 
 # Convenience name for target.
@@ -141,14 +141,14 @@ CMakeFiles/image.dir/clean:
 CMakeFiles/subimagen.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target subimagen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target subimagen"
 .PHONY : CMakeFiles/subimagen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/subimagen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subimagen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/subimagen.dir/rule
 
 # Convenience name for target.
@@ -167,14 +167,14 @@ CMakeFiles/subimagen.dir/clean:
 CMakeFiles/negativo.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target negativo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target negativo"
 .PHONY : CMakeFiles/negativo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/negativo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/negativo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/negativo.dir/rule
 
 # Convenience name for target.
@@ -193,14 +193,14 @@ CMakeFiles/negativo.dir/clean:
 CMakeFiles/zoom.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target zoom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target zoom"
 .PHONY : CMakeFiles/zoom.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zoom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zoom.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/zoom.dir/rule
 
 # Convenience name for target.

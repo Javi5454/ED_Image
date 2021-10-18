@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/adrian/CLionProjects/practica2-imagenes/estudiante/src/negativo.cpp" "/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o"
+  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/negativo.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles/image.dir/DependInfo.cmake"
+  "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

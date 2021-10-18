@@ -16,3 +16,7 @@ CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o: \
  ../estudiante/include/image.h \
  ../estudiante/include/imageIO.h \
  ../estudiante/src/subimagen.cpp
+CMakeFiles/image.dir/estudiante/src/zoom.cpp.o: \
+ ../estudiante/include/image.h \
+ ../estudiante/include/imageIO.h \
+ ../estudiante/src/zoom.cpp

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/adrian/CLionProjects/practica2-imagenes/estudiante/include
+CXX_INCLUDES = -I/home/javi5454/Desktop/Github/ED_Image/estudiante/include
 
 CXX_FLAGS = -g -std=gnu++14
 

@@ -1,5 +1,5 @@
 PROJECT_NAME           = "Práctica 1. Imágenes"
-OUTPUT_DIRECTORY       = /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/doc_doxygen/
-INPUT                  = /home/adrian/CLionProjects/practica2-imagenes/estudiante/include /home/adrian/CLionProjects/practica2-imagenes/estudiante/src /home/adrian/CLionProjects/practica2-imagenes/estudiante/doc
+OUTPUT_DIRECTORY       = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/doc_doxygen/
+INPUT                  = /home/javi5454/Desktop/Github/ED_Image/estudiante/include /home/javi5454/Desktop/Github/ED_Image/estudiante/src /home/javi5454/Desktop/Github/ED_Image/estudiante/doc
 GENERATE_LATEX         = NO
-IMAGE_PATH             = /home/adrian/CLionProjects/practica2-imagenes/estudiante/doc
+IMAGE_PATH             = /home/javi5454/Desktop/Github/ED_Image/estudiante/doc
