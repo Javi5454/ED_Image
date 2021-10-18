@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/javi5454/Desktop/Github/ED_Image
+CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/practica2-imagenes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
+CMAKE_BINARY_DIR = /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/169/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/169/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -115,6 +115,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
 
 #=============================================================================
 # Target rules for targets named image
@@ -156,17 +169,17 @@ negativo/fast:
 .PHONY : negativo/fast
 
 #=============================================================================
-# Target rules for targets named doc_doxygen
+# Target rules for targets named zoom
 
 # Build rule for target.
-doc_doxygen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
-.PHONY : doc_doxygen
+zoom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zoom
+.PHONY : zoom
 
 # fast build rule for target.
-doc_doxygen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-.PHONY : doc_doxygen/fast
+zoom/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
+.PHONY : zoom/fast
 
 estudiante/src/image.o: estudiante/src/image.cpp.o
 .PHONY : estudiante/src/image.o
@@ -269,6 +282,7 @@ estudiante/src/subimagen.o: estudiante/src/subimagen.cpp.o
 
 # target to build an object file
 estudiante/src/subimagen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o
 .PHONY : estudiante/src/subimagen.cpp.o
 
@@ -277,6 +291,7 @@ estudiante/src/subimagen.i: estudiante/src/subimagen.cpp.i
 
 # target to preprocess a source file
 estudiante/src/subimagen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.i
 .PHONY : estudiante/src/subimagen.cpp.i
 
@@ -285,8 +300,36 @@ estudiante/src/subimagen.s: estudiante/src/subimagen.cpp.s
 
 # target to generate assembly for a file
 estudiante/src/subimagen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.s
 .PHONY : estudiante/src/subimagen.cpp.s
+
+estudiante/src/zoom.o: estudiante/src/zoom.cpp.o
+.PHONY : estudiante/src/zoom.o
+
+# target to build an object file
+estudiante/src/zoom.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o
+.PHONY : estudiante/src/zoom.cpp.o
+
+estudiante/src/zoom.i: estudiante/src/zoom.cpp.i
+.PHONY : estudiante/src/zoom.i
+
+# target to preprocess a source file
+estudiante/src/zoom.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.i
+.PHONY : estudiante/src/zoom.cpp.i
+
+estudiante/src/zoom.s: estudiante/src/zoom.cpp.s
+.PHONY : estudiante/src/zoom.s
+
+# target to generate assembly for a file
+estudiante/src/zoom.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.s
+.PHONY : estudiante/src/zoom.cpp.s
 
 # Help Target
 help:
@@ -300,6 +343,7 @@ help:
 	@echo "... image"
 	@echo "... negativo"
 	@echo "... subimagen"
+	@echo "... zoom"
 	@echo "... estudiante/src/image.o"
 	@echo "... estudiante/src/image.i"
 	@echo "... estudiante/src/image.s"
@@ -315,6 +359,9 @@ help:
 	@echo "... estudiante/src/subimagen.o"
 	@echo "... estudiante/src/subimagen.i"
 	@echo "... estudiante/src/subimagen.s"
+	@echo "... estudiante/src/zoom.o"
+	@echo "... estudiante/src/zoom.i"
+	@echo "... estudiante/src/zoom.s"
 .PHONY : help
 
 

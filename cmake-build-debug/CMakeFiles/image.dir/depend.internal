@@ -4,11 +4,15 @@
 CMakeFiles/image.dir/estudiante/src/image.cpp.o
  ../estudiante/include/image.h
  ../estudiante/include/imageIO.h
- /home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp
+ /home/adrian/CLionProjects/practica2-imagenes/estudiante/src/image.cpp
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o
  ../estudiante/include/imageIO.h
- /home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageIO.cpp
+ /home/adrian/CLionProjects/practica2-imagenes/estudiante/src/imageIO.cpp
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.o
  ../estudiante/include/image.h
  ../estudiante/include/imageIO.h
- /home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageop.cpp
+ /home/adrian/CLionProjects/practica2-imagenes/estudiante/src/imageop.cpp
+CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
+ ../estudiante/include/image.h
+ ../estudiante/include/imageIO.h
+ /home/adrian/CLionProjects/practica2-imagenes/estudiante/src/subimagen.cpp

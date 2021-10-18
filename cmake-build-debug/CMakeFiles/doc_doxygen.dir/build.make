@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/169/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/javi5454/Desktop/Github/Linux_PC/II_Curso/ED/Practicas/clion-2021.2.2/bin/cmake/linux/bin/cmake -E rm -f
+RM = /snap/clion/169/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/javi5454/Desktop/Github/ED_Image
+CMAKE_SOURCE_DIR = /home/adrian/CLionProjects/practica2-imagenes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
+CMAKE_BINARY_DIR = /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug
 
 # Utility rule file for doc_doxygen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/doc_doxygen.dir/compiler_depend.make
 include CMakeFiles/doc_doxygen.dir/progress.make
 
 CMakeFiles/doc_doxygen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	cd /home/javi5454/Desktop/Github/ED_Image/estudiante && /usr/bin/doxygen /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	cd /home/adrian/CLionProjects/practica2-imagenes/estudiante && /usr/bin/doxygen /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/Doxyfile
 
 doc_doxygen: CMakeFiles/doc_doxygen
 doc_doxygen: CMakeFiles/doc_doxygen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/javi5454/Desktop/Github/ED_Image /home/javi5454/Desktop/Github/ED_Image /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/adrian/CLionProjects/practica2-imagenes /home/adrian/CLionProjects/practica2-imagenes /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug /home/adrian/CLionProjects/practica2-imagenes/cmake-build-debug/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

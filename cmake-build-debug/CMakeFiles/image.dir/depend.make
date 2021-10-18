@@ -12,3 +12,7 @@ CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: \
  ../estudiante/include/image.h \
  ../estudiante/include/imageIO.h \
  ../estudiante/src/imageop.cpp
+CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o: \
+ ../estudiante/include/image.h \
+ ../estudiante/include/imageIO.h \
+ ../estudiante/src/subimagen.cpp
