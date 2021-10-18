@@ -33,3 +33,6 @@
 
 #Juez asignatura
 juez.sh
+
+#Carpeta de CLion
+./cmake-build-debug
