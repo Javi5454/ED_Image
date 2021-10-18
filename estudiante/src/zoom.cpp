@@ -1,6 +1,7 @@
-// Fichero: subimagen.cpp
-// Recorta una parte de la imagen
 //
+// Created by adrian on 13/10/21.
+//
+
 
 #include <iostream>
 #include <cstring>
@@ -13,13 +14,13 @@ using namespace std;
 int main (int argc, char *argv[]){
 
     char *origen, *destino; // nombres de los ficheros
-    int nrow, ncol, height, width;
+    int nrow, ncol, tam;
     Image image, result;
 
     // Comprobar validez de la llamada
-    if (argc != 7){
+    if (argc != 6){
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: subimagen <fich_orig> <fich_rdo> <fila> <col> <filas_sub> <cols_sub>\n";
+        cerr << "Uso: subimagen <fich_orig> <fich_rdo> <fila> <col> <lado>\n";
         exit (1);
     }
 
@@ -28,16 +29,14 @@ int main (int argc, char *argv[]){
     destino = argv[2];
     nrow = atoi(argv[3]);
     ncol = atoi(argv[4]);
-    height = atoi(argv[5]);
-    width = atoi(argv[6]);
-
+    tam  = atoi(argv[5]);
 
     // Mostramos argumentos
     cout << endl;
     cout << "Fichero origen: " << origen << endl;
     cout << "Fichero resultado: " << destino << endl;
-    cout << "Coordenadas de la imagen original donde se va extraer: " << nrow << "x" << ncol << endl;
-    cout << "Dimension subimagen: " << height << "x" << width << endl;
+    cout << "Coordenadas de la imagen original donde se va a aplicar el zoom: " << nrow << "x" << ncol << endl;
+    cout << "Tamaño de la original: " << tam << endl;
 
     // Leer la imagen del fichero de entrada
     if (!image.Load(origen)){
@@ -51,7 +50,6 @@ int main (int argc, char *argv[]){
     cout << "Dimensiones de " << origen << ":" << endl;
     cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
-    //Comprobamos las precondiciones
     if (0 > nrow || nrow >= image.get_rows()){
         cout << "Error: Coordenada inicial x incorrecta." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
@@ -62,19 +60,15 @@ int main (int argc, char *argv[]){
         cout << "Terminando la ejecucion del programa." << endl;
         return 3;
     }
-    else if (0 > height || height >= image.get_rows() - nrow){
-        cout << "Error: Altura subimagen incorrecta." << endl;
+    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol){
+        cout << "Error: Tamaño zoom incorrecto." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
         return 4;
     }
-    else if(0 > width || width >= image.get_cols() - ncol){
-        cout << "Error: Anchura subimagen incorrecta." << endl;
-        cout << "Terminando la ejecucion del programa." << endl;
-        return 5;
-    }
+    //Comprobamos las precondiciones
 
     // Calcular el negativo
-    result = image.Crop(nrow, ncol, height, width);
+    result = image.Zoom2X(nrow, ncol, tam);
 
     // Guardar la imagen resultado en el fichero
     if (result.Save(destino))

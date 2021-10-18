@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/image.dir/estudiante/src/image.cpp.o"
   "CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
   "CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
+  "CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o"
+  "CMakeFiles/image.dir/estudiante/src/zoom.cpp.o"
   "libimage.a"
   "libimage.pdb"
 )

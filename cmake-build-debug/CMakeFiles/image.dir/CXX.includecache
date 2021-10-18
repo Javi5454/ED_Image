@@ -14,7 +14,7 @@ imageIO.h
 
 ../estudiante/include/imageIO.h
 
-/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp
+/home/adrian/CLionProjects/practica2-imagenes/estudiante/src/image.cpp
 cstring
 -
 cassert
@@ -24,15 +24,5 @@ iostream
 image.h
 -
 imageIO.h
--
-
-/home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageop.cpp
-iostream
--
-cmath
--
-image.h
--
-cassert
 -
 

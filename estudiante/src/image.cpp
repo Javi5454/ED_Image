@@ -168,18 +168,29 @@ void Image::Invert(){
 Image Image::Crop(int nrow, int ncol, int height, int width) const{
     Image result(height,width);
 
-    int copyX = nrow;
-    int copyY= ncol;
-
     for(int i=0; i<height; i++){
         for(int j=0; j<width; j++) {
-            result.set_pixel(i, j, get_pixel(copyX, copyY));
-
-            copyY++;
+            result.set_pixel(i, j, get_pixel(nrow+i, ncol+j));
         }
-        copyY = ncol;
-        copyX++;
+    }
+    return result;
+}
+
+Image Image::Zoom2X(int nrow, int ncol, int tam) const {
+
+    Image image(tam*2-1, tam*2-1);
+
+    for (int i = 0; i < tam; ++i) {
+        for (int j = 0; j < tam; ++j) {
+
+            image.set_pixel(i, 2*j, get_pixel(nrow+i, ncol+j));
+
+            byte mean = (get_pixel(i, j) + get_pixel(i, j+1))/2;
+
+            image.set_pixel(i, 2*j+1, mean);
+
+        }
     }
 
-    return result;
+    return image;
 }
