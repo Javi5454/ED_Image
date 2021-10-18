@@ -50,6 +50,7 @@ int main (int argc, char *argv[]){
     cout << "Dimensiones de " << origen << ":" << endl;
     cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
+    //Comprobamos las precondiciones
     if (0 > nrow || nrow >= image.get_rows()){
         cout << "Error: Coordenada inicial x incorrecta." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
@@ -60,14 +61,13 @@ int main (int argc, char *argv[]){
         cout << "Terminando la ejecucion del programa." << endl;
         return 3;
     }
-    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol){
+    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol) {
         cout << "Error: Tamaño zoom incorrecto." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
         return 4;
     }
-    //Comprobamos las precondiciones
 
-    // Calcular el negativo
+    // Calcular el zoom
     result = image.Zoom2X(nrow, ncol, tam);
 
     // Guardar la imagen resultado en el fichero

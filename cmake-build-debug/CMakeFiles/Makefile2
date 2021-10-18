@@ -64,10 +64,11 @@ CMAKE_BINARY_DIR = /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/doc_doxygen.dir/all
+all: CMakeFiles/zoom.dir/all
 all: CMakeFiles/image.dir/all
 all: CMakeFiles/subimagen.dir/all
 all: CMakeFiles/negativo.dir/all
-all: CMakeFiles/zoom.dir/all
+all: CMakeFiles/prueba_zoom.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,10 +77,11 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/doc_doxygen.dir/clean
+clean: CMakeFiles/zoom.dir/clean
 clean: CMakeFiles/image.dir/clean
 clean: CMakeFiles/subimagen.dir/clean
 clean: CMakeFiles/negativo.dir/clean
-clean: CMakeFiles/zoom.dir/clean
+clean: CMakeFiles/prueba_zoom.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -107,6 +109,32 @@ doc_doxygen: CMakeFiles/doc_doxygen.dir/rule
 CMakeFiles/doc_doxygen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/clean
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/zoom.dir
+
+# All Build rule for target.
+CMakeFiles/zoom.dir/all: CMakeFiles/image.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=14,15 "Built target zoom"
+.PHONY : CMakeFiles/zoom.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/zoom.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zoom.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/zoom.dir/rule
+
+# Convenience name for target.
+zoom: CMakeFiles/zoom.dir/rule
+.PHONY : zoom
+
+# clean rule for target.
+CMakeFiles/zoom.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/clean
+.PHONY : CMakeFiles/zoom.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/image.dir
@@ -141,7 +169,7 @@ CMakeFiles/image.dir/clean:
 CMakeFiles/subimagen.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target subimagen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target subimagen"
 .PHONY : CMakeFiles/subimagen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,30 +215,30 @@ CMakeFiles/negativo.dir/clean:
 .PHONY : CMakeFiles/negativo.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/zoom.dir
+# Target rules for target CMakeFiles/prueba_zoom.dir
 
 # All Build rule for target.
-CMakeFiles/zoom.dir/all: CMakeFiles/image.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target zoom"
-.PHONY : CMakeFiles/zoom.dir/all
+CMakeFiles/prueba_zoom.dir/all: CMakeFiles/image.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target prueba_zoom"
+.PHONY : CMakeFiles/prueba_zoom.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/zoom.dir/rule: cmake_check_build_system
+CMakeFiles/prueba_zoom.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 8
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zoom.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/prueba_zoom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/zoom.dir/rule
+.PHONY : CMakeFiles/prueba_zoom.dir/rule
 
 # Convenience name for target.
-zoom: CMakeFiles/zoom.dir/rule
-.PHONY : zoom
+prueba_zoom: CMakeFiles/prueba_zoom.dir/rule
+.PHONY : prueba_zoom
 
 # clean rule for target.
-CMakeFiles/zoom.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/clean
-.PHONY : CMakeFiles/zoom.dir/clean
+CMakeFiles/prueba_zoom.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/clean
+.PHONY : CMakeFiles/prueba_zoom.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

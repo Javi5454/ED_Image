@@ -13,6 +13,11 @@ add_executable(negativo ${BASE_FOLDER}/src/negativo.cpp)
 target_link_libraries(negativo LINK_PUBLIC image)
 endif()
 
+if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/prueba_zoom.cpp)
+    add_executable(prueba_zoom ${BASE_FOLDER}/src/prueba_zoom.cpp estudiante/src/prueba_zoom.cpp)
+    target_link_libraries(prueba_zoom LINK_PUBLIC image)
+endif()
+
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/subimagen.cpp)
 add_executable(subimagen ${BASE_FOLDER}/src/subimagen.cpp estudiante/src/subimagen.cpp)
 target_link_libraries(subimagen LINK_PUBLIC image)

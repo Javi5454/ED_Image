@@ -14,17 +14,13 @@ imageIO.h
 
 ../estudiante/include/imageIO.h
 
-/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp
-cstring
--
-cassert
--
+/home/javi5454/Desktop/Github/ED_Image/estudiante/src/prueba_zoom.cpp
 iostream
 -
-cmath
+cstring
+-
+cstdlib
 -
 image.h
--
-imageIO.h
 -
 

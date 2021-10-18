@@ -7,6 +7,7 @@
 #include <cstring>
 #include <cassert>
 #include <iostream>
+#include <cmath>
 
 #include <image.h>
 #include <imageIO.h>
@@ -178,19 +179,38 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
 
 Image Image::Zoom2X(int nrow, int ncol, int tam) const {
 
-    Image image(tam*2-1, tam*2-1);
+    Image orig(tam , tam * 2 - 1);
 
     for (int i = 0; i < tam; ++i) {
-        for (int j = 0; j < tam; ++j) {
+        for (int j = 0; j < tam-1; ++j) {
 
-            image.set_pixel(i, 2*j, get_pixel(nrow+i, ncol+j));
+            orig.set_pixel(i, 2 * j, get_pixel(nrow + i, ncol + j));
 
-            byte mean = (get_pixel(i, j) + get_pixel(i, j+1))/2;
+            if(j < tam-1) {
+                byte mean = ((get_pixel(nrow + i, ncol + j) + get_pixel(nrow + i, ncol + j+1))/2);
 
-            image.set_pixel(i, 2*j+1, mean);
+                orig.set_pixel(i, 2 * j + 1, mean);
+            }
 
         }
+        orig.set_pixel(i, 2 * (tam - 1), get_pixel(nrow + i, ncol + tam - 1));
     }
 
-    return image;
+    Image result(tam*2-1, tam*2-1);
+
+    for (int i = 0; i < tam; ++i) {
+        for (int j = 0; j < 2*tam-1; ++j) {
+            result.set_pixel(2 * i, j, orig.get_pixel(i, j));
+
+            if(i < tam-1){
+                byte mean = 0;
+
+                result.set_pixel(2 * i + 1, j, mean);
+            }
+        }
+
+    }
+
+    return result;
 }
+
