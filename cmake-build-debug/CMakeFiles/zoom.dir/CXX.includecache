@@ -6,21 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../estudiante/include/image.h
-cstdlib
--
-imageIO.h
-../estudiante/include/imageIO.h
-
-../estudiante/include/imageIO.h
-
-/home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp
-iostream
--
-cstring
--
-cstdlib
--
-image.h
--
-
