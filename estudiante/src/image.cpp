@@ -222,7 +222,7 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
                     mean = ((orig.get_pixel(i, j) + orig.get_pixel(i+1, j))/2);
                 }
                 else{
-                    mean = Mean(i,j,2,2);
+                    mean = Mean(i,j-1,2,2);
                 }
 
                 result.set_pixel(2 * i + 1, j, mean);
@@ -232,5 +232,31 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
     }
 
     return result;
+}
+
+Image Image::Subsample(int factor) const {
+    int icon_rows = get_rows()/factor;
+    int icon_cols = get_cols()/factor;
+    Image icon(icon_rows, icon_cols);
+
+    int nf_secc = get_rows()/icon_rows;
+    int nc_secc = get_cols()/icon_cols;
+
+    for (int i = 0; i < icon_rows; ++i) {
+        for (int j = 0; j < icon_cols; ++j) {
+            int sum = 0;
+
+            for (int k = nf_secc*i; k < nf_secc*(i+1) ; ++k) {
+                for (int l = nc_secc*j; l < nc_secc*(j+1) ; ++l) {
+                    sum = sum + get_pixel(k,l);
+                }
+            }
+
+            sum = sum/(nf_secc*nc_secc);
+            icon.set_pixel(i,j,sum);
+        }
+    }
+
+    return icon;
 }
 

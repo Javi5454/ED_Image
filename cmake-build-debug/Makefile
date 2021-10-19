@@ -130,17 +130,17 @@ doc_doxygen/fast:
 .PHONY : doc_doxygen/fast
 
 #=============================================================================
-# Target rules for targets named zoom
+# Target rules for targets named icono
 
 # Build rule for target.
-zoom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zoom
-.PHONY : zoom
+icono: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 icono
+.PHONY : icono
 
 # fast build rule for target.
-zoom/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-.PHONY : zoom/fast
+icono/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/build
+.PHONY : icono/fast
 
 #=============================================================================
 # Target rules for targets named image
@@ -182,17 +182,41 @@ negativo/fast:
 .PHONY : negativo/fast
 
 #=============================================================================
-# Target rules for targets named prueba_zoom
+# Target rules for targets named zoom
 
 # Build rule for target.
-prueba_zoom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prueba_zoom
-.PHONY : prueba_zoom
+zoom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zoom
+.PHONY : zoom
 
 # fast build rule for target.
-prueba_zoom/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/build
-.PHONY : prueba_zoom/fast
+zoom/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
+.PHONY : zoom/fast
+
+estudiante/src/icono.o: estudiante/src/icono.cpp.o
+.PHONY : estudiante/src/icono.o
+
+# target to build an object file
+estudiante/src/icono.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.o
+.PHONY : estudiante/src/icono.cpp.o
+
+estudiante/src/icono.i: estudiante/src/icono.cpp.i
+.PHONY : estudiante/src/icono.i
+
+# target to preprocess a source file
+estudiante/src/icono.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.i
+.PHONY : estudiante/src/icono.cpp.i
+
+estudiante/src/icono.s: estudiante/src/icono.cpp.s
+.PHONY : estudiante/src/icono.s
+
+# target to generate assembly for a file
+estudiante/src/icono.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.s
+.PHONY : estudiante/src/icono.cpp.s
 
 estudiante/src/image.o: estudiante/src/image.cpp.o
 .PHONY : estudiante/src/image.o
@@ -290,30 +314,6 @@ estudiante/src/negativo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.s
 .PHONY : estudiante/src/negativo.cpp.s
 
-estudiante/src/prueba_zoom.o: estudiante/src/prueba_zoom.cpp.o
-.PHONY : estudiante/src/prueba_zoom.o
-
-# target to build an object file
-estudiante/src/prueba_zoom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.o
-.PHONY : estudiante/src/prueba_zoom.cpp.o
-
-estudiante/src/prueba_zoom.i: estudiante/src/prueba_zoom.cpp.i
-.PHONY : estudiante/src/prueba_zoom.i
-
-# target to preprocess a source file
-estudiante/src/prueba_zoom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.i
-.PHONY : estudiante/src/prueba_zoom.cpp.i
-
-estudiante/src/prueba_zoom.s: estudiante/src/prueba_zoom.cpp.s
-.PHONY : estudiante/src/prueba_zoom.s
-
-# target to generate assembly for a file
-estudiante/src/prueba_zoom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.s
-.PHONY : estudiante/src/prueba_zoom.cpp.s
-
 estudiante/src/subimagen.o: estudiante/src/subimagen.cpp.o
 .PHONY : estudiante/src/subimagen.o
 
@@ -346,8 +346,8 @@ estudiante/src/zoom.o: estudiante/src/zoom.cpp.o
 
 # target to build an object file
 estudiante/src/zoom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o
 .PHONY : estudiante/src/zoom.cpp.o
 
 estudiante/src/zoom.i: estudiante/src/zoom.cpp.i
@@ -355,8 +355,8 @@ estudiante/src/zoom.i: estudiante/src/zoom.cpp.i
 
 # target to preprocess a source file
 estudiante/src/zoom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.i
 .PHONY : estudiante/src/zoom.cpp.i
 
 estudiante/src/zoom.s: estudiante/src/zoom.cpp.s
@@ -364,8 +364,8 @@ estudiante/src/zoom.s: estudiante/src/zoom.cpp.s
 
 # target to generate assembly for a file
 estudiante/src/zoom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.s
 .PHONY : estudiante/src/zoom.cpp.s
 
 # Help Target
@@ -377,11 +377,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doc_doxygen"
+	@echo "... icono"
 	@echo "... image"
 	@echo "... negativo"
-	@echo "... prueba_zoom"
 	@echo "... subimagen"
 	@echo "... zoom"
+	@echo "... estudiante/src/icono.o"
+	@echo "... estudiante/src/icono.i"
+	@echo "... estudiante/src/icono.s"
 	@echo "... estudiante/src/image.o"
 	@echo "... estudiante/src/image.i"
 	@echo "... estudiante/src/image.s"
@@ -394,9 +397,6 @@ help:
 	@echo "... estudiante/src/negativo.o"
 	@echo "... estudiante/src/negativo.i"
 	@echo "... estudiante/src/negativo.s"
-	@echo "... estudiante/src/prueba_zoom.o"
-	@echo "... estudiante/src/prueba_zoom.i"
-	@echo "... estudiante/src/prueba_zoom.s"
 	@echo "... estudiante/src/subimagen.o"
 	@echo "... estudiante/src/subimagen.i"
 	@echo "... estudiante/src/subimagen.s"
