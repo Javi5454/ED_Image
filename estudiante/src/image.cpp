@@ -203,7 +203,9 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
             result.set_pixel(2 * i, j, orig.get_pixel(i, j));
 
             if(i < tam-1){
-                byte mean = 0;
+                if((2*i+2)%2==0 && ((j+1)%2)==0){
+                    byte mean = (orig.get_pixel(i-1))
+                }
 
                 result.set_pixel(2 * i + 1, j, mean);
             }
