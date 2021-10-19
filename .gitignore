@@ -36,3 +36,4 @@ juez.sh
 
 #Carpeta de CLion
 ./cmake-build-debug
+cmake-build-debug/

@@ -222,7 +222,7 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
                     mean = ((orig.get_pixel(i, j) + orig.get_pixel(i+1, j))/2);
                 }
                 else{
-                    mean = Mean(i,j,i+1,);
+                    mean = Mean(i,j,2,2);
                 }
 
                 result.set_pixel(2 * i + 1, j, mean);
