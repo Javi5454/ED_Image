@@ -45,6 +45,7 @@ int main (int argc, char *argv[]){
         return 1;
     }
 
+
     // Mostrar los parametros de la Imagen
     cout << endl;
     cout << "Dimensiones de " << origen << ":" << endl;

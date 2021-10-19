@@ -181,12 +181,14 @@ double Image::Mean(int i, int j, int height, int width) const {
     double result = 0;
 
     for (int k = i; k < i+width  ; ++k) {
-        for (int l = j; l < height+j ; ++l) {
+        for (int l = j; l < j+height ; ++l) {
             result += get_pixel(k,l);
         }
     }
 
-    return result/(height*width);
+    result /= (height*width);
+
+    return ceil(result);
 }
 
 Image Image::Zoom2X(int nrow, int ncol, int tam) const {
@@ -219,17 +221,22 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
 
             if(i < tam-1){
                 if(j%2 == 0){
-                    mean = ((orig.get_pixel(i, j) + orig.get_pixel(i+1, j))/2);
-                }
-                else{
-                    mean = Mean(i,j,2,2);
+                    mean = orig.Mean(i,j,1,2);
                 }
 
                 result.set_pixel(2 * i + 1, j, mean);
             }
         }
-
     }
+
+    for (int i = 0; i < 2 * tam - 1; ++i) {
+        for (int j = 0; j < 2 * tam - 1; ++j) {
+            if (i*j%2!=0)
+                result.set_pixel(i,j, ceil(Mean(nrow+(i-1)/2, ncol+(j-1)/2, 2,2)));
+        }
+    }
+
+
 
     return result;
 }
