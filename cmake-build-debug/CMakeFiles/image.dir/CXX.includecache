@@ -14,7 +14,7 @@ imageIO.h
 
 ../estudiante/include/imageIO.h
 
-/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp
+/home/adrian/CLionProjects/ED_Image/estudiante/src/image.cpp
 cstring
 -
 cassert
@@ -26,5 +26,43 @@ cmath
 image.h
 -
 imageIO.h
+-
+
+/home/adrian/CLionProjects/ED_Image/estudiante/src/imageIO.cpp
+string
+-
+imageIO.h
+-
+fstream
+-
+
+/home/adrian/CLionProjects/ED_Image/estudiante/src/imageop.cpp
+iostream
+-
+cmath
+-
+image.h
+-
+cassert
+-
+
+/home/adrian/CLionProjects/ED_Image/estudiante/src/subimagen.cpp
+iostream
+-
+cstring
+-
+cstdlib
+-
+image.h
+-
+
+/home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp
+iostream
+-
+cstring
+-
+cstdlib
+-
+image.h
 -
 

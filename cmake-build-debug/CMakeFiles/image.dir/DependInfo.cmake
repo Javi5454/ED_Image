@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/image.cpp.o"
-  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageIO.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
-  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageop.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
-  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/subimagen.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o"
-  "/home/javi5454/Desktop/Github/ED_Image/estudiante/src/zoom.cpp" "/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/zoom.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/image.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/image.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/imageIO.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/imageop.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/subimagen.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/zoom.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

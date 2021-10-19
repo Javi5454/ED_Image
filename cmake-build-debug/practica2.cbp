@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="doc_doxygen">
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc_doxygen"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 doc_doxygen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zoom">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="zoom/fast">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,30 +77,30 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 zoom/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="image">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -110,20 +110,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="image/fast">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/libimage.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -133,20 +133,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 image/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="subimagen">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -156,20 +156,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="subimagen/fast">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/subimagen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -179,20 +179,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 subimagen/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="negativo">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -202,20 +202,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="negativo/fast">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/negativo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -225,20 +225,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 negativo/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="prueba_zoom">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/prueba_zoom" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/prueba_zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -248,20 +248,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 prueba_zoom"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 prueba_zoom"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="prueba_zoom/fast">
-				<Option output="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/prueba_zoom" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug"/>
+				<Option output="/home/adrian/CLionProjects/ED_Image/cmake-build-debug/prueba_zoom" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/adrian/CLionProjects/ED_Image/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/javi5454/Desktop/Github/ED_Image/estudiante/include"/>
+					<Add directory="/home/adrian/CLionProjects/ED_Image/estudiante/include"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -271,40 +271,40 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 prueba_zoom/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/javi5454/Desktop/Github/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 prueba_zoom/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/adrian/CLionProjects/ED_Image/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/image.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/image.cpp">
 			<Option target="image"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageIO.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/imageIO.cpp">
 			<Option target="image"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/imageop.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/imageop.cpp">
 			<Option target="image"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/negativo.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/negativo.cpp">
 			<Option target="negativo"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/prueba_zoom.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/prueba_zoom.cpp">
 			<Option target="prueba_zoom"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/subimagen.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/subimagen.cpp">
 			<Option target="image"/>
 			<Option target="subimagen"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/estudiante/src/zoom.cpp">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp">
 			<Option target="zoom"/>
 			<Option target="image"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/CMakeLists.txt">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/javi5454/Desktop/Github/ED_Image/Doxyfile.in">
+		<Unit filename="/home/adrian/CLionProjects/ED_Image/Doxyfile.in">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
