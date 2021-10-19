@@ -177,6 +177,18 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
     return result;
 }
 
+double Image::Mean(int i, int j, int height, int width) const {
+    double result = 0;
+
+    for (int k = i; k < i+width  ; ++k) {
+        for (int l = j; l < height+j ; ++l) {
+            result += get_pixel(k,l);
+        }
+    }
+
+    return result/(height*width);
+}
+
 Image Image::Zoom2X(int nrow, int ncol, int tam) const {
 
     Image orig(tam , tam * 2 - 1);
@@ -196,14 +208,22 @@ Image Image::Zoom2X(int nrow, int ncol, int tam) const {
         orig.set_pixel(i, 2 * (tam - 1), get_pixel(nrow + i, ncol + tam - 1));
     }
 
+
     Image result(tam*2-1, tam*2-1);
 
     for (int i = 0; i < tam; ++i) {
         for (int j = 0; j < 2*tam-1; ++j) {
             result.set_pixel(2 * i, j, orig.get_pixel(i, j));
 
+            byte mean = 0;
+
             if(i < tam-1){
-                byte mean = 0;
+                if(j%2 == 0){
+                    mean = ((orig.get_pixel(i, j) + orig.get_pixel(i+1, j))/2);
+                }
+                else{
+                    mean = Mean(i,j,i+1,);
+                }
 
                 result.set_pixel(2 * i + 1, j, mean);
             }
