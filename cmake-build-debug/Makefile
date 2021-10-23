@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/adrian/CLionProjects/ED_Image/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/169/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -84,6 +74,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/snap/clion/169/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -117,43 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named doc_doxygen
+# Target rules for targets named eficiencia
 
 # Build rule for target.
-doc_doxygen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
-.PHONY : doc_doxygen
+eficiencia: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eficiencia
+.PHONY : eficiencia
 
 # fast build rule for target.
-doc_doxygen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-.PHONY : doc_doxygen/fast
-
-#=============================================================================
-# Target rules for targets named zoom
-
-# Build rule for target.
-zoom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zoom
-.PHONY : zoom
-
-# fast build rule for target.
-zoom/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-.PHONY : zoom/fast
-
-#=============================================================================
-# Target rules for targets named image
-
-# Build rule for target.
-image: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 image
-.PHONY : image
-
-# fast build rule for target.
-image/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-.PHONY : image/fast
+eficiencia/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/build
+.PHONY : eficiencia/fast
 
 #=============================================================================
 # Target rules for targets named subimagen
@@ -169,6 +143,32 @@ subimagen/fast:
 .PHONY : subimagen/fast
 
 #=============================================================================
+# Target rules for targets named image
+
+# Build rule for target.
+image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 image
+.PHONY : image
+
+# fast build rule for target.
+image/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
+.PHONY : image/fast
+
+#=============================================================================
+# Target rules for targets named icono
+
+# Build rule for target.
+icono: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 icono
+.PHONY : icono
+
+# fast build rule for target.
+icono/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/build
+.PHONY : icono/fast
+
+#=============================================================================
 # Target rules for targets named negativo
 
 # Build rule for target.
@@ -182,17 +182,161 @@ negativo/fast:
 .PHONY : negativo/fast
 
 #=============================================================================
-# Target rules for targets named prueba_zoom
+# Target rules for targets named contraste
 
 # Build rule for target.
-prueba_zoom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 prueba_zoom
-.PHONY : prueba_zoom
+contraste: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 contraste
+.PHONY : contraste
 
 # fast build rule for target.
-prueba_zoom/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/build
-.PHONY : prueba_zoom/fast
+contraste/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/build
+.PHONY : contraste/fast
+
+#=============================================================================
+# Target rules for targets named barajar
+
+# Build rule for target.
+barajar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 barajar
+.PHONY : barajar
+
+# fast build rule for target.
+barajar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/build
+.PHONY : barajar/fast
+
+#=============================================================================
+# Target rules for targets named zoom
+
+# Build rule for target.
+zoom: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zoom
+.PHONY : zoom
+
+# fast build rule for target.
+zoom/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
+.PHONY : zoom/fast
+
+#=============================================================================
+# Target rules for targets named doc_doxygen
+
+# Build rule for target.
+doc_doxygen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 doc_doxygen
+.PHONY : doc_doxygen
+
+# fast build rule for target.
+doc_doxygen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
+.PHONY : doc_doxygen/fast
+
+estudiante/src/barajar.o: estudiante/src/barajar.cpp.o
+.PHONY : estudiante/src/barajar.o
+
+# target to build an object file
+estudiante/src/barajar.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o
+.PHONY : estudiante/src/barajar.cpp.o
+
+estudiante/src/barajar.i: estudiante/src/barajar.cpp.i
+.PHONY : estudiante/src/barajar.i
+
+# target to preprocess a source file
+estudiante/src/barajar.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.i
+.PHONY : estudiante/src/barajar.cpp.i
+
+estudiante/src/barajar.s: estudiante/src/barajar.cpp.s
+.PHONY : estudiante/src/barajar.s
+
+# target to generate assembly for a file
+estudiante/src/barajar.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/barajar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.s
+.PHONY : estudiante/src/barajar.cpp.s
+
+estudiante/src/contraste.o: estudiante/src/contraste.cpp.o
+.PHONY : estudiante/src/contraste.o
+
+# target to build an object file
+estudiante/src/contraste.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/contraste.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o
+.PHONY : estudiante/src/contraste.cpp.o
+
+estudiante/src/contraste.i: estudiante/src/contraste.cpp.i
+.PHONY : estudiante/src/contraste.i
+
+# target to preprocess a source file
+estudiante/src/contraste.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/contraste.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.i
+.PHONY : estudiante/src/contraste.cpp.i
+
+estudiante/src/contraste.s: estudiante/src/contraste.cpp.s
+.PHONY : estudiante/src/contraste.s
+
+# target to generate assembly for a file
+estudiante/src/contraste.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/contraste.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.s
+.PHONY : estudiante/src/contraste.cpp.s
+
+estudiante/src/eficiencia.o: estudiante/src/eficiencia.cpp.o
+.PHONY : estudiante/src/eficiencia.o
+
+# target to build an object file
+estudiante/src/eficiencia.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/eficiencia.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o
+.PHONY : estudiante/src/eficiencia.cpp.o
+
+estudiante/src/eficiencia.i: estudiante/src/eficiencia.cpp.i
+.PHONY : estudiante/src/eficiencia.i
+
+# target to preprocess a source file
+estudiante/src/eficiencia.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/eficiencia.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.i
+.PHONY : estudiante/src/eficiencia.cpp.i
+
+estudiante/src/eficiencia.s: estudiante/src/eficiencia.cpp.s
+.PHONY : estudiante/src/eficiencia.s
+
+# target to generate assembly for a file
+estudiante/src/eficiencia.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eficiencia.dir/build.make CMakeFiles/eficiencia.dir/estudiante/src/eficiencia.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.s
+.PHONY : estudiante/src/eficiencia.cpp.s
+
+estudiante/src/icono.o: estudiante/src/icono.cpp.o
+.PHONY : estudiante/src/icono.o
+
+# target to build an object file
+estudiante/src/icono.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.o
+.PHONY : estudiante/src/icono.cpp.o
+
+estudiante/src/icono.i: estudiante/src/icono.cpp.i
+.PHONY : estudiante/src/icono.i
+
+# target to preprocess a source file
+estudiante/src/icono.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.i
+.PHONY : estudiante/src/icono.cpp.i
+
+estudiante/src/icono.s: estudiante/src/icono.cpp.s
+.PHONY : estudiante/src/icono.s
+
+# target to generate assembly for a file
+estudiante/src/icono.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/estudiante/src/icono.cpp.s
+.PHONY : estudiante/src/icono.cpp.s
 
 estudiante/src/image.o: estudiante/src/image.cpp.o
 .PHONY : estudiante/src/image.o
@@ -290,37 +434,13 @@ estudiante/src/negativo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.s
 .PHONY : estudiante/src/negativo.cpp.s
 
-estudiante/src/prueba_zoom.o: estudiante/src/prueba_zoom.cpp.o
-.PHONY : estudiante/src/prueba_zoom.o
-
-# target to build an object file
-estudiante/src/prueba_zoom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.o
-.PHONY : estudiante/src/prueba_zoom.cpp.o
-
-estudiante/src/prueba_zoom.i: estudiante/src/prueba_zoom.cpp.i
-.PHONY : estudiante/src/prueba_zoom.i
-
-# target to preprocess a source file
-estudiante/src/prueba_zoom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.i
-.PHONY : estudiante/src/prueba_zoom.cpp.i
-
-estudiante/src/prueba_zoom.s: estudiante/src/prueba_zoom.cpp.s
-.PHONY : estudiante/src/prueba_zoom.s
-
-# target to generate assembly for a file
-estudiante/src/prueba_zoom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/prueba_zoom.dir/build.make CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.s
-.PHONY : estudiante/src/prueba_zoom.cpp.s
-
 estudiante/src/subimagen.o: estudiante/src/subimagen.cpp.o
 .PHONY : estudiante/src/subimagen.o
 
 # target to build an object file
 estudiante/src/subimagen.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
 .PHONY : estudiante/src/subimagen.cpp.o
 
 estudiante/src/subimagen.i: estudiante/src/subimagen.cpp.i
@@ -328,8 +448,8 @@ estudiante/src/subimagen.i: estudiante/src/subimagen.cpp.i
 
 # target to preprocess a source file
 estudiante/src/subimagen.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.i
 .PHONY : estudiante/src/subimagen.cpp.i
 
 estudiante/src/subimagen.s: estudiante/src/subimagen.cpp.s
@@ -337,8 +457,8 @@ estudiante/src/subimagen.s: estudiante/src/subimagen.cpp.s
 
 # target to generate assembly for a file
 estudiante/src/subimagen.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/subimagen.cpp.s
 .PHONY : estudiante/src/subimagen.cpp.s
 
 estudiante/src/zoom.o: estudiante/src/zoom.cpp.o
@@ -346,8 +466,8 @@ estudiante/src/zoom.o: estudiante/src/zoom.cpp.o
 
 # target to build an object file
 estudiante/src/zoom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o
 .PHONY : estudiante/src/zoom.cpp.o
 
 estudiante/src/zoom.i: estudiante/src/zoom.cpp.i
@@ -355,8 +475,8 @@ estudiante/src/zoom.i: estudiante/src/zoom.cpp.i
 
 # target to preprocess a source file
 estudiante/src/zoom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.i
 .PHONY : estudiante/src/zoom.cpp.i
 
 estudiante/src/zoom.s: estudiante/src/zoom.cpp.s
@@ -364,8 +484,8 @@ estudiante/src/zoom.s: estudiante/src/zoom.cpp.s
 
 # target to generate assembly for a file
 estudiante/src/zoom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/estudiante/src/zoom.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.s
 .PHONY : estudiante/src/zoom.cpp.s
 
 # Help Target
@@ -377,11 +497,26 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... doc_doxygen"
+	@echo "... barajar"
+	@echo "... contraste"
+	@echo "... eficiencia"
+	@echo "... icono"
 	@echo "... image"
 	@echo "... negativo"
-	@echo "... prueba_zoom"
 	@echo "... subimagen"
 	@echo "... zoom"
+	@echo "... estudiante/src/barajar.o"
+	@echo "... estudiante/src/barajar.i"
+	@echo "... estudiante/src/barajar.s"
+	@echo "... estudiante/src/contraste.o"
+	@echo "... estudiante/src/contraste.i"
+	@echo "... estudiante/src/contraste.s"
+	@echo "... estudiante/src/eficiencia.o"
+	@echo "... estudiante/src/eficiencia.i"
+	@echo "... estudiante/src/eficiencia.s"
+	@echo "... estudiante/src/icono.o"
+	@echo "... estudiante/src/icono.i"
+	@echo "... estudiante/src/icono.s"
 	@echo "... estudiante/src/image.o"
 	@echo "... estudiante/src/image.i"
 	@echo "... estudiante/src/image.s"
@@ -394,9 +529,6 @@ help:
 	@echo "... estudiante/src/negativo.o"
 	@echo "... estudiante/src/negativo.i"
 	@echo "... estudiante/src/negativo.s"
-	@echo "... estudiante/src/prueba_zoom.o"
-	@echo "... estudiante/src/prueba_zoom.i"
-	@echo "... estudiante/src/prueba_zoom.s"
 	@echo "... estudiante/src/subimagen.o"
 	@echo "... estudiante/src/subimagen.i"
 	@echo "... estudiante/src/subimagen.s"

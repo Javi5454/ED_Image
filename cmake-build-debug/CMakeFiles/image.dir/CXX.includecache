@@ -14,27 +14,15 @@ imageIO.h
 
 ../estudiante/include/imageIO.h
 
-/home/adrian/CLionProjects/ED_Image/estudiante/src/image.cpp
-cstring
--
-cassert
--
+/home/adrian/CLionProjects/ED_Image/estudiante/src/eficiencia.cpp
 iostream
--
-cmath
--
+/home/adrian/CLionProjects/ED_Image/estudiante/src/iostream
 image.h
--
-imageIO.h
--
-
-/home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp
-iostream
--
-cstring
--
+/home/adrian/CLionProjects/ED_Image/estudiante/src/image.h
+chrono
+/home/adrian/CLionProjects/ED_Image/estudiante/src/chrono
 cstdlib
--
-image.h
--
+/home/adrian/CLionProjects/ED_Image/estudiante/src/cstdlib
+fstream
+/home/adrian/CLionProjects/ED_Image/estudiante/src/fstream
 

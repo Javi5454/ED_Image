@@ -131,13 +131,55 @@ CMakeFiles/image.dir/estudiante/src/zoom.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/zoom.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/ED_Image/estudiante/src/zoom.cpp -o CMakeFiles/image.dir/estudiante/src/zoom.cpp.s
 
+CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: CMakeFiles/image.dir/flags.make
+CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: ../estudiante/src/contraste.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/image.dir/estudiante/src/contraste.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o -c /home/adrian/CLionProjects/ED_Image/estudiante/src/contraste.cpp
+
+CMakeFiles/image.dir/estudiante/src/contraste.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/contraste.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/ED_Image/estudiante/src/contraste.cpp > CMakeFiles/image.dir/estudiante/src/contraste.cpp.i
+
+CMakeFiles/image.dir/estudiante/src/contraste.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/contraste.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/ED_Image/estudiante/src/contraste.cpp -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.s
+
+CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: CMakeFiles/image.dir/flags.make
+CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: ../estudiante/src/barajar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/image.dir/estudiante/src/barajar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.o -c /home/adrian/CLionProjects/ED_Image/estudiante/src/barajar.cpp
+
+CMakeFiles/image.dir/estudiante/src/barajar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/barajar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/ED_Image/estudiante/src/barajar.cpp > CMakeFiles/image.dir/estudiante/src/barajar.cpp.i
+
+CMakeFiles/image.dir/estudiante/src/barajar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/barajar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/ED_Image/estudiante/src/barajar.cpp -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.s
+
+CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o: CMakeFiles/image.dir/flags.make
+CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o: ../estudiante/src/eficiencia.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o -c /home/adrian/CLionProjects/ED_Image/estudiante/src/eficiencia.cpp
+
+CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/adrian/CLionProjects/ED_Image/estudiante/src/eficiencia.cpp > CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.i
+
+CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/adrian/CLionProjects/ED_Image/estudiante/src/eficiencia.cpp -o CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.s
+
 # Object files for target image
 image_OBJECTS = \
 "CMakeFiles/image.dir/estudiante/src/image.cpp.o" \
 "CMakeFiles/image.dir/estudiante/src/imageop.cpp.o" \
 "CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o" \
 "CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o" \
-"CMakeFiles/image.dir/estudiante/src/zoom.cpp.o"
+"CMakeFiles/image.dir/estudiante/src/zoom.cpp.o" \
+"CMakeFiles/image.dir/estudiante/src/contraste.cpp.o" \
+"CMakeFiles/image.dir/estudiante/src/barajar.cpp.o" \
+"CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o"
 
 # External object files for target image
 image_EXTERNAL_OBJECTS =
@@ -147,9 +189,12 @@ libimage.a: CMakeFiles/image.dir/estudiante/src/imageop.cpp.o
 libimage.a: CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o
 libimage.a: CMakeFiles/image.dir/estudiante/src/subimagen.cpp.o
 libimage.a: CMakeFiles/image.dir/estudiante/src/zoom.cpp.o
+libimage.a: CMakeFiles/image.dir/estudiante/src/contraste.cpp.o
+libimage.a: CMakeFiles/image.dir/estudiante/src/barajar.cpp.o
+libimage.a: CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o
 libimage.a: CMakeFiles/image.dir/build.make
 libimage.a: CMakeFiles/image.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libimage.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libimage.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/image.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image.dir/link.txt --verbose=$(VERBOSE)
 

@@ -14,6 +14,8 @@
 
 using namespace std;
 
+#define MAX_BYTE 255
+
 /********************************
       FUNCIONES PRIVADAS
 ********************************/
@@ -180,64 +182,139 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
 double Image::Mean(int i, int j, int height, int width) const {
     double result = 0;
 
-    for (int k = i; k < i+width  ; ++k) {
-        for (int l = j; l < j+height ; ++l) {
+    for (int k = i; k < i+height  ; ++k) {
+        for (int l = j; l < j+width ; ++l) {
             result += get_pixel(k,l);
         }
     }
 
     result /= (height*width);
 
-    return ceil(result);
+    if(result - floor(result) >= 0.5) return floor(result+1);
+
+    return floor(result);
 }
 
-Image Image::Zoom2X(int nrow, int ncol, int tam) const {
+Image Image::Zoom2X() const {
 
-    Image orig(tam , tam * 2 - 1);
+    int rows_res = rows*2-1, cols_res = cols*2-1;
 
-    for (int i = 0; i < tam; ++i) {
-        for (int j = 0; j < tam-1; ++j) {
+    Image result(rows_res, cols_res);
 
-            orig.set_pixel(i, 2 * j, get_pixel(nrow + i, ncol + j));
-
-            if(j < tam-1) {
-                byte mean = ((get_pixel(nrow + i, ncol + j) + get_pixel(nrow + i, ncol + j+1))/2);
-
-                orig.set_pixel(i, 2 * j + 1, mean);
-            }
-
-        }
-        orig.set_pixel(i, 2 * (tam - 1), get_pixel(nrow + i, ncol + tam - 1));
-    }
-
-
-    Image result(tam*2-1, tam*2-1);
-
-    for (int i = 0; i < tam; ++i) {
-        for (int j = 0; j < 2*tam-1; ++j) {
-            result.set_pixel(2 * i, j, orig.get_pixel(i, j));
-
-            byte mean = 0;
-
-            if(i < tam-1){
-                if(j%2 == 0){
-                    mean = orig.Mean(i,j,1,2);
-                }
-
-                result.set_pixel(2 * i + 1, j, mean);
-            }
+    for (int i = 0; i < rows_res; ++i) {
+        for (int j = 0; j < cols_res; ++j) {
+            if(i%2==0 && j%2==0)
+                result.set_pixel(i,j, get_pixel(i/2,j/2));
+            if(i%2==0 && j%2!=0)
+                result.set_pixel(i,j, Mean(i/2,j/2,1,2));
+            if(i%2!=0 && j%2==0)
+                result.set_pixel(i,j, Mean(i/2,j/2,2,1));
+            if(i*j%2!=0)
+                result.set_pixel(i,j, Mean(i/2,j/2,2,2));
         }
     }
-
-    for (int i = 0; i < 2 * tam - 1; ++i) {
-        for (int j = 0; j < 2 * tam - 1; ++j) {
-            if (i*j%2!=0)
-                result.set_pixel(i,j, ceil(Mean(nrow+(i-1)/2, ncol+(j-1)/2, 2,2)));
-        }
-    }
-
-
 
     return result;
+
+
+//    Image orig(rows,cols * 2 - 1);
+
+//    for (int i = 0; i < rows; i+=2) {
+//        for (int j = 0; j < cols; j+=2) {
+//
+//            orig.set_pixel(i, 2 * j, get_pixel(i, j));
+//
+//            if(j < rows-1) {
+//                byte mean = Mean(i,j, 1,2);
+//
+//                orig.set_pixel(i, 2 * j + 1, mean);
+//            }
+//
+//        }
+//        orig.set_pixel(i, 2 * (rows - 1), get_pixel(i, rows - 1));
+//    }
+//
+//
+//    Image result(rows*2-1, rows*2-1);
+//
+//    for (int i = 0; i < rows; ++i) {
+//        for (int j = 0; j < 2*rows-1; ++j) {
+//            result.set_pixel(2 * i, j, orig.get_pixel(i, j));
+//
+//            byte mean = 0;
+//
+//            if(i < rows-1){
+//                if(j%2 == 0){
+//                    mean = orig.Mean(i,j,1,2);
+//                }
+//
+//                result.set_pixel(2 * i + 1, j, mean);
+//            }
+//        }
+//    }
+//
+//    for (int i = 0; i < 2 * rows - 1; ++i) {
+//        for (int j = 0; j < 2 * rows - 1; ++j) {
+//            if (i*j%2!=0)
+//                result.set_pixel(i,j, Mean((i-1)/2, (j-1)/2, 2,2));
+//        }
+//    }
+}
+
+Image Image::Subsample(int factor) const {
+    int icon_rows = get_rows()/factor;
+    int icon_cols = get_cols()/factor;
+    Image icon(icon_rows, icon_cols);
+
+    int nf_secc = get_rows()/icon_rows;
+    int nc_secc = get_cols()/icon_cols;
+
+    for (int i = 0; i < icon_rows; ++i) {
+        for (int j = 0; j < icon_cols; ++j) {
+            int sum = 0;
+
+            for (int k = nf_secc*i; k < nf_secc*(i+1) ; ++k) {
+                for (int l = nc_secc*j; l < nc_secc*(j+1) ; ++l) {
+                    sum = sum + get_pixel(k,l);
+                }
+            }
+
+            sum = sum/(nf_secc*nc_secc);
+            icon.set_pixel(i,j,sum);
+        }
+    }
+
+    return icon;
+}
+
+void Image::ShuffleRows() {
+    const int p = 9973;
+
+    Image temp(rows,cols);
+    int newr;
+    for (int r=0; r<rows; r++){
+        newr = r*p%rows;
+        for (int c=0; c<cols;c++)
+            temp.set_pixel(r,c,get_pixel(newr,c));
+    }
+    Copy(temp);
+}
+
+void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
+    for (int z = 0; z < rows*cols; ++z) {
+
+        double temp = 0;
+
+        if(get_pixel(z) < in1)
+            temp = get_pixel(z) * out1*1.0/in1;
+        else if (get_pixel(z) > in2)
+            temp = out2 + (get_pixel(z)-in2)*(MAX_BYTE-out2)*1.0/(MAX_BYTE-in2);
+        else
+            temp = out1 + (out2-out1)*1.0/(in2-in1) * (get_pixel(z)-in1);
+
+        if (temp - int(temp) >= 0.5) temp=int(temp)+1;
+
+        set_pixel(z, temp);
+    }
 }
 

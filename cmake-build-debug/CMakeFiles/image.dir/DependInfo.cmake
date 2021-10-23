@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/barajar.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/barajar.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/contraste.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/contraste.cpp.o"
+  "/home/adrian/CLionProjects/ED_Image/estudiante/src/eficiencia.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o"
   "/home/adrian/CLionProjects/ED_Image/estudiante/src/image.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/image.cpp.o"
   "/home/adrian/CLionProjects/ED_Image/estudiante/src/imageIO.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
   "/home/adrian/CLionProjects/ED_Image/estudiante/src/imageop.cpp" "/home/adrian/CLionProjects/ED_Image/cmake-build-debug/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"

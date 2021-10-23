@@ -6,17 +6,17 @@ set(BASE_FOLDER estudiante)
 
 include_directories(${BASE_FOLDER}/include)
 #add_library(imageio ${BASE_FOLDER}/src/imageio.cpp)
-add_library(image ${BASE_FOLDER}/src/image.cpp ${BASE_FOLDER}/src/imageop.cpp ${BASE_FOLDER}/src/imageIO.cpp estudiante/src/subimagen.cpp estudiante/src/zoom.cpp)
+add_library(image ${BASE_FOLDER}/src/image.cpp ${BASE_FOLDER}/src/imageop.cpp ${BASE_FOLDER}/src/imageIO.cpp estudiante/src/subimagen.cpp estudiante/src/zoom.cpp estudiante/src/contraste.cpp estudiante/src/barajar.cpp estudiante/src/eficiencia.cpp)
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/negativo.cpp)
 add_executable(negativo ${BASE_FOLDER}/src/negativo.cpp)
 target_link_libraries(negativo LINK_PUBLIC image)
 endif()
 
-if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/prueba_zoom.cpp)
-    add_executable(prueba_zoom ${BASE_FOLDER}/src/prueba_zoom.cpp estudiante/src/prueba_zoom.cpp)
-    target_link_libraries(prueba_zoom LINK_PUBLIC image)
-endif()
+#if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/prueba_zoom.cpp)
+#    add_executable(prueba_zoom ${BASE_FOLDER}/src/prueba_zoom.cpp estudiante/src/prueba_zoom.cpp)
+#    target_link_libraries(prueba_zoom LINK_PUBLIC image)
+#endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/subimagen.cpp)
 add_executable(subimagen ${BASE_FOLDER}/src/subimagen.cpp estudiante/src/subimagen.cpp)
@@ -29,7 +29,7 @@ target_link_libraries(zoom LINK_PUBLIC image)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/icono.cpp)
-add_executable(icono ${BASE_FOLDER}/src/icono.cpp)
+add_executable(icono ${BASE_FOLDER}/src/icono.cpp estudiante/src/icono.cpp estudiante/src/icono.cpp)
 target_link_libraries(icono LINK_PUBLIC image)
 endif()
 
@@ -41,6 +41,11 @@ endif()
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/barajar.cpp)
 add_executable(barajar ${BASE_FOLDER}/src/barajar.cpp)
 target_link_libraries(barajar LINK_PUBLIC image)
+endif()
+
+if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/eficiencia.cpp)
+    add_executable(eficiencia ${BASE_FOLDER}/src/eficiencia.cpp)
+    target_link_libraries(eficiencia LINK_PUBLIC image)
 endif()
 
 # check if Doxygen is installed

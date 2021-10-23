@@ -253,9 +253,22 @@ public :
     // Modifica el contraste de una Imagen .
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+    /**
+     * @brief
+     *
+     * @param i fila del vertice superior izquierdo del rectangulo
+     * @param j columna del vertice superior izquierdo del rectangulo
+     * @param height
+     * @param width
+     * @return
+     */
     double Mean (int i, int j, int height, int width) const;
 
+    /**
+     *
+     * @param factor
+     * @return
+     */
     // Genera un icono como reducción de una imagen.
     Image Subsample(int factor) const;
 
@@ -275,10 +288,7 @@ public :
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     // Genera una imagen aumentada 2x.
-    Image Zoom2X(int nrow, int ncol, int lado) const;
-
-    // Copia el contenido de la imagen pasada como parámetro a la imagen que llama en la posición indicada.
-    void PaintIn(Image & in, int i, int j);
+    Image Zoom2X() const;
 
     // Baraja pseudoaleatoriamente las filas de una imagen.
     void ShuffleRows();

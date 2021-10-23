@@ -1,4 +1,7 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/image.dir/estudiante/src/barajar.cpp.o"
+  "CMakeFiles/image.dir/estudiante/src/contraste.cpp.o"
+  "CMakeFiles/image.dir/estudiante/src/eficiencia.cpp.o"
   "CMakeFiles/image.dir/estudiante/src/image.cpp.o"
   "CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
   "CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"

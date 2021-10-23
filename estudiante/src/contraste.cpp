@@ -1,7 +1,6 @@
 //
-// Created by adrian on 13/10/21.
+// Created by adrian on 20/10/21.
 //
-
 
 #include <iostream>
 #include <cstring>
@@ -14,29 +13,29 @@ using namespace std;
 int main (int argc, char *argv[]){
 
     char *origen, *destino; // nombres de los ficheros
-    int nrow, ncol, tam;
+    int e1, e2, s1, s2;
     Image image, result;
 
     // Comprobar validez de la llamada
-    if (argc != 6){
+    if (argc != 7){
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: zoom <fich_orig> <fich_rdo> <fila> <col> <lado>\n";
+        cerr << "Uso: contraste <fich_orig> <fich_rdo> <e1> <e2> <s1> <s2>\n";
         exit (1);
     }
 
     // Obtener argumentos
     origen  = argv[1];
     destino = argv[2];
-    nrow = atoi(argv[3]);
-    ncol = atoi(argv[4]);
-    tam  = atoi(argv[5]);
+    e1 = atoi(argv[3]);
+    e2 = atoi(argv[4]);
+    s1 = atoi(argv[5]);
+    s2 = atoi(argv[6]);
 
     // Mostramos argumentos
     cout << endl;
     cout << "Fichero origen: " << origen << endl;
     cout << "Fichero resultado: " << destino << endl;
-    cout << "Coordenadas de la imagen original donde se va a aplicar el zoom: " << nrow << "x" << ncol << endl;
-    cout << "Tamaño de la original: " << tam << endl;
+    cout << "Parametros usados:" << endl << "e1: " << e1 << ", e2: " << e2 << ", s1: " << s1 << ", s2: " << s2 << endl;
 
     // Leer la imagen del fichero de entrada
     if (!image.Load(origen)){
@@ -52,28 +51,32 @@ int main (int argc, char *argv[]){
     cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
     //Comprobamos las precondiciones
-    if (0 > nrow || nrow >= image.get_rows()){
-        cout << "Error: Coordenada inicial x incorrecta." << endl;
+    if (0 > e1 || e1 >= 256){
+        cout << "Error: parametro <e1> incorrecto." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
         return 2;
     }
-    else if(0 > ncol || ncol >= image.get_cols()){
-        cout << "Error: Coordenada inicial y incorrecta." << endl;
+    if (0 > e2 || e2 >= 256){
+        cout << "Error: parametro <e2> incorrecto." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
         return 3;
     }
-    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol) {
-        cout << "Error: Tamaño zoom incorrecto." << endl;
+    if (0 > s1 || s1 >= 256){
+        cout << "Error: parametro <s1> incorrecto." << endl;
         cout << "Terminando la ejecucion del programa." << endl;
         return 4;
     }
+    if (0 > s2 || s2 >= 256){
+        cout << "Error: parametro <s2> incorrecto." << endl;
+        cout << "Terminando la ejecucion del programa." << endl;
+        return 5;
+    }
 
     // Calcular el zoom
-    result = image.Crop(nrow,ncol, tam, tam);
-    result = result.Zoom2X();
+    image.AdjustContrast(e1, e2, s1, s2);
 
     // Guardar la imagen resultado en el fichero
-    if (result.Save(destino))
+    if (image.Save(destino))
         cout  << "La imagen se guardo en " << destino << endl;
     else{
         cerr << "Error: No pudo guardarse la imagen." << endl;

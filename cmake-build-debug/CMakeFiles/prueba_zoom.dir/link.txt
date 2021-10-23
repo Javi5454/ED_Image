@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/prueba_zoom.dir/estudiante/src/prueba_zoom.cpp.o -o prueba_zoom  libimage.a 

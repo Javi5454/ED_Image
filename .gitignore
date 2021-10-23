@@ -37,7 +37,11 @@ juez.sh
 #Carpeta de CLion
 ./cmake-build-debug
 cmake-build-debug/
+<<<<<<< HEAD
 cmake-build-debug/CMakeFiles/image.dir/CXX.includecache
 cmake-build-debug/CMakeFiles/image.dir/CXX.includecache
 
 
+=======
+./cmake-build-debug/
+>>>>>>> 52bc60f800d2d9e7265c30804165a6934b6d11c8
