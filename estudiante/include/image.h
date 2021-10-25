@@ -251,23 +251,37 @@ public :
     void Invert();
 
     // Modifica el contraste de una Imagen .
+    /**
+     * @brief Modifica el contraste de una Imagen a partir de modificar su espectro
+     * @param in1 Umbral inferior de la imagen de entrada
+     * @param in2 Umbral superior de la imagen de entrada
+     * @param out1 Umbral inferior de la iamgen de salida
+     * @param out2 Umbral superior de la imagen de salida
+     * @pre 0 <= (in1, in2, out2, out3) <= 255
+     * @pre in1 < in2
+     * @pre out1 < out2
+     * @post El objeto que llama a la función es modificado.
+     */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
 
     /**
-     * @brief
-     *
+     * @brief Calcula la media de los valores de una imagen o de un fragmento de esta.
      * @param i fila del vertice superior izquierdo del rectangulo
      * @param j columna del vertice superior izquierdo del rectangulo
      * @param height
      * @param width
-     * @return
+     * @return devuelve un double, la media de la región que se ha específicado.
      */
     double Mean (int i, int j, int height, int width) const;
 
     /**
-     *
-     * @param factor
-     * @return
+     * @brief Genera un icono como reducción de una imagen
+     * @param factor Factor de reducción de la imagen con respecto al icono.
+     * @pre factor > O
+     * @return El icono a partir de la imagen
+     * @post La imagen no se modifica
+     * @post La imagen resultante tendrá tamaño int(filas/factor) X int(columnas/factor).
+       Descartando los decimales de la división.
      */
     // Genera un icono como reducción de una imagen.
     Image Subsample(int factor) const;
@@ -288,9 +302,20 @@ public :
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     // Genera una imagen aumentada 2x.
+    /**
+     * @brief Amplia la imagen al doble de su tamaño inicial
+     * @return Una iamgen ampliada x2.
+     */
     Image Zoom2X() const;
 
     // Baraja pseudoaleatoriamente las filas de una imagen.
+    /**
+     * @brief Encripta la imagen de manera "aleatoria"
+     * @pre rows < 9973
+     * @post El objeto que llama al método se modifica generando la nueva imagen según
+     el siguiente algoritmo: newr=(r*p) % rows, donde newr es el nuevo índice la fila r,
+     p un número coprimo de rows, y rows el número de filas de la imagen
+     */
     void ShuffleRows();
 } ;
 

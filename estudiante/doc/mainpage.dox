@@ -23,9 +23,11 @@ mayor parte de la sintaxis de Doxygen para comentar código en su
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+La idea de esta práctica es trabajar con mapas de escalas de grises. Una **imagen digital** de niveles de gris puede verse como una matriz bidimensional de puntos (píxeles) en la que cada uno tiene asociado un nivel de luminosidad cuyos valores están en el conjunto {0,1, ...,255} de forma que el 0 indica mínima luminosidad (negro) y el 255 la máxima (blanco). Con esta representación, cada píxel requiere únicamente un byte (**unsigned char**). Así, el estudiante debe realizar la implementación de distintos métodos especificados por el profesor, para trabajar con datos de tipo iamgen.
 
 # Ejecutables
+
+A continuación se especifica que realiza cada ejecutable que se ha desarrollado.
 
 @image html invert.png
 ## Negativo:
@@ -36,6 +38,83 @@ Calcula el negativo de una imagen
 @param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
 @param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
 
+@image html subimagen.jpg
+## Subimagen:
 
+Genera una subimagen a partir de otra:
+> __subimagen__ \<fich_orig\> \<fich_rdo\> \<fila\> \<col\> \<filas_sub\> \<cols_sub\>
+@param <fich_orig> Nombre del fichero que contiene la imagen original.
+@param <fich_rdo> Nombre del fichero que contendrá la subimagen resultado.
+@param <fila> Primera coordenada de la esquina superior izquierda de la subimagen que se va a extraer
+@param <col> Segunda coordenada de la esquina superior izquierda de la subimagen que se va a extraer
+@param <fila_sub> Número de filas de la subimagen que se va a extraer
+@param <col_sub> Número de columnas de la subimagen que se va extraer
 
+Un ejemplo de parámetros correctos para este programa serían:
+    ./img/vacas.pgm ./expected/subimagen.pgm 85 145 60 60
+
+@image html zoom.jpg
+## Zoom:
+
+Realiza un zoom x2 de una porción de la imagen:
+> __zoom__ \<fich_orig\> \<fich_rdo\> \<fila\> \<col\> \<lado\>
+@param <fich_orig> Nombre del fichero que contiene la imagen original.
+@param <fich_rdo> Nombre del fichero que contendrá la subimagen resultado.
+@param <fila> Primera coordenada de la esquina superior izquierda de la subimagen que se va a extraer
+@param <col> Segunda coordenada de la esquina superior izquierda de la subimagen que se va a extraer
+@param <lado> Tamaño del cuadrado que genera el zoom. El cuadrado descrito debe estar totalmente incluido en la imagen.
+
+Un ejemplo de parámetros correctos para este programa serían:
+    ./img/vacas.pgm ./expected/zoom.pgm 85 145 60
+
+@image html icono.jpg
+## Icono:
+
+Crea una imagen de tamaño muy reducido a partir de una imagen original
+> __icono__ \<fich_orig\> \<fich_rdo\> \<factor\>
+@param <fich_orig> Nombre del fichero que contiene la imagen original.
+@param <fich_rdo> Nombre del fichero que contendrá la subimagen resultado.
+@param <factor> Factor de reducción. La imagen resultante tendrá floor(filas/factor) x floor(cols/factor)
+
+Un ejemplo de parámetros correctos para este programa serían:
+    ./img/vacas.pgm ./expected/icono.pgm 2
+
+@image html contraste.jpg
+## Contraste:
+
+Cambia el contraste de una imagen a partir del histograma:
+> __contraste__ \<fich_orig\> \<fich_rdo\> \<e1\> \<e2\> \<s1\> \<s2\>
+@param <fich_orig> Nombre del fichero que contiene la imagen original.
+@param <fich_rdo> Nombre del fichero que contendrá la imagen resultado.
+@param <e1> Valores usados para la transformación
+@param <e2> Valores usados para la transformación
+@param <s1> Valores usados para la transformación
+@param <s2> Valores usados para la transformación
+
+Un ejemplo de parámetros correctos para este programa serían:
+    ./img/vacas.pgm ./expected/contraste.pgm 64 192 32 224
+
+@image html barajar.jpg
+## Barajar
+
+Crea una nueva imagen igual que la anterior pero con las filas "aleatorias"
+> __barajar__ \<orig\> \<dest\>
+@param <orig> Nombre del fichero que contiene la imagen original.
+@param <dest> Nombre del fichero que contendrá la imagen resultado.
+
+Un ejemplo de parámetros correctos para este programa serían:
+    ./img/vacas.pgm ./expected/barajar.pgm
+
+# Análisis de eficiencia
+El método ShuffleRows tal y como está planteado en la práctica, presenta una complejidad de operación O(rows*cols). Esto se debe a que la estructura de la imagen es un vector y copia píxel a píxel. De manera experimental, podemos observalo graficamente:
+@image html Eficiencia_antiguo.png
+
+El análisis teórico de esta función original lo vemos aquí:
+@image html eficiencia1_teorico.png
+
+Sin embargo, tras realizar una modificación y pasar a trabajar con una estructura matricial en la que solo se barajan los punteros de los datos, obtenemos una eficiencia mucho mejor (O(n)). De manera experimental, podemos observalo gráficamente:
+@image html Eficiencia_mejorado.png
+
+El análisis teórico de la función modificada lo vemos aquí:
+@image html eficiencia2_teorico.png
 */
