@@ -145,20 +145,26 @@ byte Image::get_pixel (int i, int j) const {
 void Image::set_pixel (int k, byte value) {
     // TODO this makes assumptions about the internal representation
     // TODO Can you reuse set_pixel(i,j,value)?
-    img[0][k] = value;
+    // img[0][k] = value;
+    set_pixel(k/cols, k%cols, value);
 }
 
 // This doesn't work if representation changes
 byte Image::get_pixel (int k) const {
     // TODO this makes assumptions about the internal representation
     // TODO Can you reuse get_pixel(i,j)?
-    return img[0][k];
+    // return img[0][k];
+    return get_pixel(k/cols, k%cols);
 }
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
     // TODO this makes assumptions about the internal representation
-    byte * p = img[0];
+    byte * p = new byte[rows*cols];
+
+    for (int k = 0; k < rows*cols; ++k)
+        p[k] = get_pixel(k);
+
     return WritePGMImage(file_path, p, rows, cols);
 }
 
@@ -287,20 +293,39 @@ Image Image::Subsample(int factor) const {
     return icon;
 }
 
-void Image::ShuffleRows() {
-    const int p = 9973;
+//void Image::ShuffleRows() {
+//    const int p = 9973;                               // O(1)
+//
+//    Image temp(rows,cols);                            // O(rows*cols)
+//    int newr;                                         // O(1)
+//
+//    for (int r=0; r<rows; r++){                       // O(1)                 // O(rows*cols)
+//        newr = r*p%rows;                              // O(1)                 //
+//        for (int c=0; c<cols;c++)                     // O(1)     // O(cols)  //
+//            temp.set_pixel(r,c,get_pixel(newr,c));    // O(1)     //          //
+//    }                                                 //
+//    Copy(temp);                                       // O(rows*cols)
+//}                                                     // resultado ---> O(rows*cols)
 
-    Image temp(rows,cols);
-    int newr;
-    for (int r=0; r<rows; r++){
-        newr = r*p%rows;
-        for (int c=0; c<cols;c++)
-            temp.set_pixel(r,c,get_pixel(newr,c));
+
+
+void Image::ShuffleRows() {
+    const int p = 9973;                     // O(1)
+    int newr;                               // O(1)
+
+    byte *aux[rows];                        // O(1)
+
+    for (int r=0; r<rows; r++) {            // O(1)     // O(rows)
+        newr = r * p % rows;                // O(1)     //
+        aux[r] = img[newr];                 // O(1)     //
     }
-    Copy(temp);
-}
+
+    for (int r=0; r<rows; r++)              // O(rows)
+        img[r] = aux[r];                    // O(1)
+}                                           // resultado ---> O(rows)
 
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
+
     for (int z = 0; z < rows*cols; ++z) {
 
         double temp = 0;
@@ -312,7 +337,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
         else
             temp = out1 + (out2-out1)*1.0/(in2-in1) * (get_pixel(z)-in1);
 
-        if (temp - int(temp) >= 0.5) temp=int(temp)+1;
+        temp = round(temp);
 
         set_pixel(z, temp);
     }
