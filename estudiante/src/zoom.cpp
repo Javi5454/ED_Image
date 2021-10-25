@@ -52,21 +52,21 @@ int main (int argc, char *argv[]){
     cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
     //Comprobamos las precondiciones
-    if (0 > nrow || nrow >= image.get_rows()){
-        cout << "Error: Coordenada inicial x incorrecta." << endl;
-        cout << "Terminando la ejecucion del programa." << endl;
-        return 2;
-    }
-    else if(0 > ncol || ncol >= image.get_cols()){
-        cout << "Error: Coordenada inicial y incorrecta." << endl;
-        cout << "Terminando la ejecucion del programa." << endl;
-        return 3;
-    }
-    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol) {
-        cout << "Error: Tamaño zoom incorrecto." << endl;
-        cout << "Terminando la ejecucion del programa." << endl;
-        return 4;
-    }
+//    if (0 > nrow || nrow >= image.get_rows()){
+//        cout << "Error: Coordenada inicial x incorrecta." << endl;
+//        cout << "Terminando la ejecucion del programa." << endl;
+//        return 2;
+//    }
+//    else if(0 > ncol || ncol >= image.get_cols()){
+//        cout << "Error: Coordenada inicial y incorrecta." << endl;
+//        cout << "Terminando la ejecucion del programa." << endl;
+//        return 3;
+//    }
+//    else if (0 > tam || tam >= image.get_rows() - nrow || tam >= image.get_cols() - ncol) {
+//        cout << "Error: Tamaño zoom incorrecto." << endl;
+//        cout << "Terminando la ejecucion del programa." << endl;
+//        return 4;
+//    }
 
     // Calcular el zoom
     result = image.Crop(nrow,ncol, tam, tam);

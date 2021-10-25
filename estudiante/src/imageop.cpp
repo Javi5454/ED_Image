@@ -18,11 +18,12 @@ void Image::Invert(){
 }
 
 Image Image::Crop(int nrow, int ncol, int height, int width) const{
+
     Image result(height,width);
 
-    for(int i=0; i<height; i++){
-        for(int j=0; j<width; j++) {
-            result.set_pixel(i, j, this->get_pixel(nrow+i, ncol+j));
+    for(int i=nrow; i<nrow+height; i++){
+        for(int j=ncol; j<ncol+width; j++) {
+            result.set_pixel(i-nrow, j-ncol, get_pixel(i,j));
         }
     }
     return result;
@@ -70,24 +71,6 @@ Image Image::Subsample(int factor) const {
     int icon_rows = get_rows()/factor;
     int icon_cols = get_cols()/factor;
     Image icon(icon_rows, icon_cols);
-
-//    int nf_secc = get_rows()/icon_rows;
-//    int nc_secc = get_cols()/icon_cols;
-//
-//    for (int i = 0; i < icon_rows; ++i) {
-//        for (int j = 0; j < icon_cols; ++j) {
-//            int sum = 0;
-//
-//            for (int k = nf_secc*i; k < nf_secc*(i+1) ; ++k) {
-//                for (int l = nc_secc*j; l < nc_secc*(j+1) ; ++l) {
-//                    sum = sum + get_pixel(k,l);
-//                }
-//            }
-//
-//            sum = sum/(nf_secc*nc_secc);
-//            icon.set_pixel(i,j,sum);
-//        }
-//    }
 
     for (int i = 0; i < rows/factor; ++i) {
         for (int j = 0; j < cols/factor; ++j) {
